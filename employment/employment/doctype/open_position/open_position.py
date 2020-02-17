@@ -20,7 +20,10 @@ def make_employee(source_name, target_doc=None):
 			"Open Position": {
 				"doctype": "Employee",
 				"field_map": {
-					"name1": "employee_name",
+					"name1": "first_name",
+		            "status": "status",	
+		            "gender": "gender",
+		            "date_open_for_request": "Date of Joining"			 
 				}}
 		}, target_doc, set_missing_values)
 	return doc

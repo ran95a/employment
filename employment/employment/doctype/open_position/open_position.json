@@ -225,9 +225,9 @@
    "set_only_once": 1
   }
  ],
- "modified": "2020-02-16 13:07:24.663534",
+ "modified": "2020-02-17 16:13:32.043008",
  "modified_by": "Administrator",
- "module": "HR",
+ "module": "Employment",
  "name": "Open Position",
  "owner": "Administrator",
  "permissions": [

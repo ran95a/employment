@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include employment *.css
+recursive-include employment *.csv
+recursive-include employment *.html
+recursive-include employment *.ico
+recursive-include employment *.js
+recursive-include employment *.json
+recursive-include employment *.md
+recursive-include employment *.png
+recursive-include employment *.py
+recursive-include employment *.svg
+recursive-include employment *.txt
+recursive-exclude employment *.pyc

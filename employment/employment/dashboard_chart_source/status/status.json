@@ -1,0 +1,13 @@
+{
+ "creation": "2020-02-10 12:45:04.743550",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2020-02-10 12:45:04.743550",
+ "modified_by": "Administrator",
+ "module": "Employment",
+ "name": "Status",
+ "owner": "Administrator",
+ "source_name": "Status",
+ "timeseries": 0
+}

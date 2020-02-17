@@ -1,0 +1,250 @@
+{
+ "autoname": "field:name1",
+ "creation": "2020-02-04 16:39:42.460128",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "position_list",
+  "postion",
+  "column_break_13",
+  "postion_old_one",
+  "department",
+  "designation",
+  "section_break_25",
+  "verified_date",
+  "db",
+  "status",
+  "name1",
+  "national",
+  "residentynational_id",
+  "passport_no",
+  "job_cat",
+  "date_open_for_request",
+  "dsg_src",
+  "job_catogrey",
+  "department_name",
+  "request_gendar",
+  "candidate_identified",
+  "rec_cen",
+  "loc_cen",
+  "gender",
+  "column_break_29",
+  "budget_approval_sent",
+  "budget_approval_recevied",
+  "msd_sent",
+  "msd_recevied",
+  "etaarrv_date",
+  "remarks",
+  "time_line",
+  "er"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_cat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Cat"
+  },
+  {
+   "fieldname": "verified_date",
+   "fieldtype": "Datetime",
+   "label": "Verified Date"
+  },
+  {
+   "fieldname": "date_open_for_request",
+   "fieldtype": "Date",
+   "label": "Date Open For Request"
+  },
+  {
+   "fieldname": "dsg_src",
+   "fieldtype": "Data",
+   "label": "DSG SRC"
+  },
+  {
+   "fieldname": "request_gendar",
+   "fieldtype": "Select",
+   "label": "Requment Gendar",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "candidate_identified",
+   "fieldtype": "Data",
+   "label": "Candidate Identified "
+  },
+  {
+   "depends_on": "eval:doc.status == \"Arrived Externally\"\n",
+   "fieldname": "national",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "Saudi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Advertised Int\nAdvertised Ext\nAdvertised Int & Ext\nMeeting Department\nRequisition\nSourcing\nSorting CVs\nEnglish Exam/Typing\nCVs for review\nInterview\nPQD/ AOC\nClinical Privileges\nCredentials Committee\nMSD\nSecurity Clearance\nJob Offer\nMedical Exam\nAttestation Documents\nPrometric Exam\nDataflow\nSCFHS Auditor\nVisa Process\nTransfer of Sponsorship\nTravel Order\nETA Confirmed\nPAF\nDBAF\nJob Description\nLocum\nBackup\nHold\nHold for pool employee\nFrozen\nDropped\nArrived Externally\nArrived Internally"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Select",
+   "label": "Remarks",
+   "options": "HOLD BY PGD"
+  },
+  {
+   "fieldname": "time_line",
+   "fieldtype": "Data",
+   "label": "Time Line"
+  },
+  {
+   "fieldname": "budget_approval_sent",
+   "fieldtype": "Date",
+   "label": "Budget Approval Sent"
+  },
+  {
+   "fieldname": "budget_approval_recevied",
+   "fieldtype": "Date",
+   "label": "Budget Approval Recevied"
+  },
+  {
+   "fieldname": "msd_sent",
+   "fieldtype": "Date",
+   "label": "MSD Sent"
+  },
+  {
+   "fieldname": "msd_recevied",
+   "fieldtype": "Date",
+   "label": "MSD Recevied"
+  },
+  {
+   "fieldname": "etaarrv_date",
+   "fieldtype": "Datetime",
+   "label": "ETA/Arrv Date"
+  },
+  {
+   "fieldname": "db",
+   "fieldtype": "Data",
+   "label": "DB"
+  },
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Data",
+   "label": "Department Name"
+  },
+  {
+   "fieldname": "rec_cen",
+   "fieldtype": "Data",
+   "label": "REC CEN"
+  },
+  {
+   "fieldname": "loc_cen",
+   "fieldtype": "Data",
+   "label": "LOC CEN"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "position_list.postion",
+   "fieldname": "postion",
+   "fieldtype": "Data",
+   "label": "Postion Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "position_list.postion_old_one",
+   "fieldname": "postion_old_one",
+   "fieldtype": "Data",
+   "label": "Postion n. Old One",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "position_list.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "position_list.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "job_catogrey",
+   "fieldtype": "Data",
+   "label": "Job Catogrey"
+  },
+  {
+   "depends_on": "eval:doc.status == \"Arrived Externally\"",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name_",
+   "unique": 1
+  },
+  {
+   "fieldname": "er",
+   "fieldtype": "Currency",
+   "label": "ER"
+  },
+  {
+   "depends_on": "eval:doc.status == \"Arrived Externally\" \n",
+   "fieldname": "residentynational_id",
+   "fieldtype": "Data",
+   "label": "Residenty/National ID"
+  },
+  {
+   "depends_on": "eval:doc.status == \"Arrived Externally\"\n",
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "fieldname": "position_list",
+   "fieldtype": "Link",
+   "label": "Position List",
+   "options": "Position List",
+   "set_only_once": 1
+  }
+ ],
+ "modified": "2020-02-16 13:07:24.663534",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Open Position",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,20 @@
+{
+ "add_total_row": 0,
+ "creation": "2020-02-11 13:34:24.670661",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2020-02-11 13:34:24.670661",
+ "modified_by": "Administrator",
+ "module": "Employment",
+ "name": "Status",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Employee Form2",
+ "report_name": "Status",
+ "report_type": "Script Report",
+ "roles": []
+}

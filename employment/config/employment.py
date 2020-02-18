@@ -17,6 +17,11 @@ def get_data():
 					"name": "Open Position",
 					"onboard": 1,
 				},
+                                {
+					"type": "doctype",
+					"name": "Employee",
+					"onboard": 1,
+				},
 				
 				
 			]

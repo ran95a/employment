@@ -4,22 +4,22 @@ from frappe import _
 def get_data():
 	return [
 		{
-			"label": _("employment"),
+			"label": _("Recruitment Status Report(RSR)"),
 			"items": [
 				
 				{
 					"type": "doctype",
-					"name": "Position List",
+					"name": "Vacant Position List",
 					"onboard": 1,
 				},
 				{
 					"type": "doctype",
-					"name": "Open Position",
+					"name": "Candidate List",
 					"onboard": 1,
 				},
-                                {
+                {
 					"type": "doctype",
-					"name": "Employee",
+					"name": "Employee Arrival List",
 					"onboard": 1,
 				},
 				

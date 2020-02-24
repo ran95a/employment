@@ -14,7 +14,7 @@ frappe.ui.form.on('Open Position', {
 });
 let make_employee = function (frm) {
 	frappe.model.open_mapped_doc({
-		method: "employment.employment.doctype.open_position.open_position.make_employee",
+		method: "Recruitment Status Report(RSR).Recruitment Status Report(RSR).doctype.open_position.open_position.make_employee",
 		frm: frm
 	});
 };

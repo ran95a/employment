@@ -1,0 +1,253 @@
+{
+ "autoname": "Prompt",
+ "creation": "2020-02-04 16:39:42.460128",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "position_detail_section",
+  "postion",
+  "column_break_13",
+  "postion_old_one",
+  "department",
+  "designation",
+  "section_break_25",
+  "verified_date",
+  "national",
+  "residentynational_id",
+  "passport_no",
+  "job_cat",
+  "dsg_src",
+  "job_catogrey",
+  "department_name",
+  "candidate_list",
+  "loc_cen",
+  "gender",
+  "column_break_29",
+  "budget_approval_sent",
+  "budget_approval_recevied",
+  "status",
+  "msd_sent",
+  "msd_recevied",
+  "date_open_for_request",
+  "etaarrv_date",
+  "requision_date",
+  "time_line",
+  "time_line_rd",
+  "requiment_detail_section",
+  "rec_cen",
+  "request_gendar",
+  "column_break_30",
+  "remarks",
+  "er"
+ ],
+ "fields": [
+  {
+   "fieldname": "postion",
+   "fieldtype": "Data",
+   "label": "Postion Number"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "postion_old_one",
+   "fieldtype": "Data",
+   "label": "Postion n. Old One",
+   "read_only": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "verified_date",
+   "fieldtype": "Datetime",
+   "label": "Verified Date"
+  },
+  {
+   "depends_on": "eval:doc.status == \"Arrived Externally\"\n",
+   "fieldname": "national",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "Saudi",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.status == \"Arrived Externally\" \n",
+   "fieldname": "residentynational_id",
+   "fieldtype": "Data",
+   "label": "Residenty/National ID"
+  },
+  {
+   "depends_on": "eval:doc.status == \"Arrived Externally\"\n",
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "fieldname": "job_cat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Cat"
+  },
+  {
+   "fieldname": "date_open_for_request",
+   "fieldtype": "Date",
+   "label": "Date Open For Request"
+  },
+  {
+   "fieldname": "dsg_src",
+   "fieldtype": "Data",
+   "label": "DSG SRC"
+  },
+  {
+   "fieldname": "job_catogrey",
+   "fieldtype": "Data",
+   "label": "Job Catogrey"
+  },
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Data",
+   "label": "Department Name"
+  },
+  {
+   "fieldname": "request_gendar",
+   "fieldtype": "Select",
+   "label": "Requment Gendar",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "rec_cen",
+   "fieldtype": "Data",
+   "label": "REC CEN"
+  },
+  {
+   "fieldname": "loc_cen",
+   "fieldtype": "Data",
+   "label": "LOC CEN"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "budget_approval_sent",
+   "fieldtype": "Date",
+   "label": "Budget Approval Sent"
+  },
+  {
+   "fieldname": "budget_approval_recevied",
+   "fieldtype": "Date",
+   "label": "Budget Approval Recevied"
+  },
+  {
+   "fieldname": "msd_sent",
+   "fieldtype": "Date",
+   "label": "MSD Sent"
+  },
+  {
+   "fieldname": "msd_recevied",
+   "fieldtype": "Date",
+   "label": "MSD Recevied"
+  },
+  {
+   "fieldname": "etaarrv_date",
+   "fieldtype": "Datetime",
+   "label": "ETA/Arrv Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Select",
+   "label": "Remarks",
+   "options": "HOLD BY PGD"
+  },
+  {
+   "fieldname": "time_line",
+   "fieldtype": "Data",
+   "label": "Time Line"
+  },
+  {
+   "fieldname": "er",
+   "fieldtype": "Currency",
+   "label": "ER"
+  },
+  {
+   "fieldname": "candidate_list",
+   "fieldtype": "Link",
+   "label": "Candidate List",
+   "options": "Candidate List"
+  },
+  {
+   "fieldname": "position_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Position Detail"
+  },
+  {
+   "fieldname": "requiment_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Requiment Detail"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Advertised Int\nAdvertised Ext\nAdvertised Int. & Ext\nMeeting Department\nRequisition\nSourcing\nSorting CVs\nEnglish Exam/Typing\nCVs for review\nInterview\nPQD/ AOC\nClinical Privileges\nCredentials Committee\nMSD\nSecurity Clearance\nJob Offer\nMedical Exam\nAttestation Documents\nPrometric Exam\nDataflow\nSCFHS Auditor\nVisa Process\nTransfer of Sponsorship\nTravel Order\nETA Confirmed\nPAF\nDBAF\nJob Description\nLocum\nBackup\nHold\nHold for pool employee\nFrozen\nDropped\nArrived Externally\nArrived Internally"
+  },
+  {
+   "fieldname": "requision_date",
+   "fieldtype": "Datetime",
+   "label": "Requision Date"
+  },
+  {
+   "fieldname": "time_line_rd",
+   "fieldtype": "Data",
+   "label": "Time Line RD"
+  }
+ ],
+ "modified": "2020-02-24 11:22:26.417608",
+ "modified_by": "Administrator",
+ "module": "Recruitment Status Report(RSR)",
+ "name": "Vacant Position List",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

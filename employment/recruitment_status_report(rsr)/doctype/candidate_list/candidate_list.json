@@ -1,44 +1,41 @@
 {
+ "autoname": "field:name1",
  "creation": "2020-02-23 15:59:48.119723",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "postion_number",
-  "designation",
-  "passport_no",
-  "residentynational_id",
-  "gender"
+  "name1",
+  "national",
+  "gender",
+  "recruitment_centerrec"
  ],
  "fields": [
   {
-   "fieldname": "postion_number",
-   "fieldtype": "Data",
-   "label": "Postion Number"
-  },
-  {
-   "fieldname": "designation",
-   "fieldtype": "Link",
-   "label": "Designation",
-   "options": "Designation"
-  },
-  {
-   "fieldname": "passport_no",
-   "fieldtype": "Data",
-   "label": "Passport No"
-  },
-  {
-   "fieldname": "residentynational_id",
-   "fieldtype": "Data",
-   "label": "Residenty/National ID"
-  },
-  {
    "fieldname": "gender",
    "fieldtype": "Select",
-   "label": "Gender"
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "recruitment_centerrec",
+   "fieldtype": "Data",
+   "label": "Recruitment Center(REC)"
+  },
+  {
+   "fieldname": "national",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "Saudi"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
   }
  ],
- "modified": "2020-02-23 20:03:16.542026",
+ "modified": "2020-02-27 15:26:17.550851",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Candidate List",

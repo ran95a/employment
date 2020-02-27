@@ -1,32 +1,33 @@
 {
- "autoname": "Prompt",
+ "autoname": "prompt",
  "creation": "2020-02-04 16:39:42.460128",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "section_break_1",
+  "status",
   "position_detail_section",
-  "postion",
-  "column_break_13",
+  "postion_name",
   "postion_old_one",
   "department",
-  "designation",
-  "section_break_25",
+  "job_title",
+  "column_break_13",
   "verified_date",
-  "national",
+  "dsg_src",
+  "request_gendar",
+  "section_break_25",
   "residentynational_id",
   "passport_no",
-  "job_cat",
-  "dsg_src",
   "job_catogrey",
-  "department_name",
   "candidate_list",
-  "loc_cen",
+  "national",
   "gender",
-  "column_break_29",
+  "rec_cen",
+  "loc_cen",
   "budget_approval_sent",
   "budget_approval_recevied",
-  "status",
+  "column_break_29",
   "msd_sent",
   "msd_recevied",
   "date_open_for_request",
@@ -35,18 +36,11 @@
   "time_line",
   "time_line_rd",
   "requiment_detail_section",
-  "rec_cen",
-  "request_gendar",
-  "column_break_30",
   "remarks",
+  "column_break_30",
   "er"
  ],
  "fields": [
-  {
-   "fieldname": "postion",
-   "fieldtype": "Data",
-   "label": "Postion Number"
-  },
   {
    "fieldname": "column_break_13",
    "fieldtype": "Column Break"
@@ -54,8 +48,7 @@
   {
    "fieldname": "postion_old_one",
    "fieldtype": "Data",
-   "label": "Postion n. Old One",
-   "read_only": 1
+   "label": "Postion n. Old One"
   },
   {
    "fieldname": "department",
@@ -64,27 +57,14 @@
    "options": "Department"
   },
   {
-   "fieldname": "designation",
-   "fieldtype": "Link",
-   "label": "Designation",
-   "options": "Designation"
-  },
-  {
    "fieldname": "section_break_25",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Candidate Detail"
   },
   {
    "fieldname": "verified_date",
    "fieldtype": "Datetime",
    "label": "Verified Date"
-  },
-  {
-   "depends_on": "eval:doc.status == \"Arrived Externally\"\n",
-   "fieldname": "national",
-   "fieldtype": "Select",
-   "label": "Nationality",
-   "options": "Saudi",
-   "reqd": 1
   },
   {
    "depends_on": "eval:doc.status == \"Arrived Externally\" \n",
@@ -99,12 +79,6 @@
    "label": "Passport No"
   },
   {
-   "fieldname": "job_cat",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Job Cat"
-  },
-  {
    "fieldname": "date_open_for_request",
    "fieldtype": "Date",
    "label": "Date Open For Request"
@@ -116,13 +90,9 @@
   },
   {
    "fieldname": "job_catogrey",
-   "fieldtype": "Data",
-   "label": "Job Catogrey"
-  },
-  {
-   "fieldname": "department_name",
-   "fieldtype": "Data",
-   "label": "Department Name"
+   "fieldtype": "Link",
+   "label": "Job Catogrey",
+   "options": "Job Catogrey"
   },
   {
    "fieldname": "request_gendar",
@@ -131,6 +101,8 @@
    "options": "Male\nFemale"
   },
   {
+   "fetch_from": "candidate_list.recruitment_centerrec",
+   "fetch_if_empty": 1,
    "fieldname": "rec_cen",
    "fieldtype": "Data",
    "label": "REC CEN"
@@ -141,6 +113,8 @@
    "label": "LOC CEN"
   },
   {
+   "fetch_from": "candidate_list.gender",
+   "fetch_if_empty": 1,
    "fieldname": "gender",
    "fieldtype": "Select",
    "label": "Gender",
@@ -192,12 +166,6 @@
    "label": "ER"
   },
   {
-   "fieldname": "candidate_list",
-   "fieldtype": "Link",
-   "label": "Candidate List",
-   "options": "Candidate List"
-  },
-  {
    "fieldname": "position_detail_section",
    "fieldtype": "Section Break",
    "label": "Position Detail"
@@ -226,9 +194,41 @@
    "fieldname": "time_line_rd",
    "fieldtype": "Data",
    "label": "Time Line RD"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Link",
+   "label": "Job Title",
+   "options": "Job Title"
+  },
+  {
+   "fieldname": "postion_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Postion Number",
+   "unique": 1
+  },
+  {
+   "fetch_from": "candidate_list.national",
+   "fieldname": "national",
+   "fieldtype": "Select",
+   "label": "Nationalty",
+   "options": "Saudi"
+  },
+  {
+   "fieldname": "candidate_list",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Candidate List",
+   "options": "Candidate List",
+   "reqd": 1
   }
  ],
- "modified": "2020-02-24 11:22:26.417608",
+ "modified": "2020-02-27 15:24:24.141817",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Vacant Position List",

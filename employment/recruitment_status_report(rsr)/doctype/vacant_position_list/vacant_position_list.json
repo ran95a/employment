@@ -1,5 +1,5 @@
 {
- "autoname": "prompt",
+ "autoname": "field:postion_name",
  "creation": "2020-02-04 16:39:42.460128",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -104,8 +104,9 @@
    "fetch_from": "candidate_list.recruitment_centerrec",
    "fetch_if_empty": 1,
    "fieldname": "rec_cen",
-   "fieldtype": "Data",
-   "label": "REC CEN"
+   "fieldtype": "Link",
+   "label": "REC CEN",
+   "options": "REC CEN"
   },
   {
    "fieldname": "loc_cen",
@@ -210,6 +211,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Postion Number",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -228,7 +230,7 @@
    "reqd": 1
   }
  ],
- "modified": "2020-02-27 15:24:24.141817",
+ "modified": "2020-03-04 19:36:17.619758",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Vacant Position List",

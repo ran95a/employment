@@ -11,6 +11,12 @@ app_color = "grey"
 app_email = "r.alhabbash@fixtag.com.sa"
 app_license = "MIT"
 
+website_context = {
+	"favicon": '/assets/employment/Image/Logo.PNG',
+	"splash_image": '/assets/employment/Image/Logo.PNG'
+	
+}
+app_logo_url = '/assets/employment/Image/Logo.PNG'
 # Includes in <head>
 # ------------------
 

@@ -1,0 +1,39 @@
+{
+ "creation": "2020-03-04 19:35:04.588760",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rec_cen"
+ ],
+ "fields": [
+  {
+   "fieldname": "rec_cen",
+   "fieldtype": "Data",
+   "label": "REC CEN"
+  }
+ ],
+ "modified": "2020-03-04 19:35:04.588760",
+ "modified_by": "Administrator",
+ "module": "Recruitment Status Report(RSR)",
+ "name": "REC CEN",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

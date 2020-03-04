@@ -42,9 +42,8 @@ def get_context(context):
 			context["social_login"] = True
 	ldap_settings = LDAPSettings.get_ldap_client_settings()
 	context["ldap_settings"] = ldap_settings
-
 	login_name_placeholder = [_("Email address")]
-
+  
 	if frappe.utils.cint(frappe.get_system_settings("allow_login_using_mobile_number")):
 		login_name_placeholder.append(_("Mobile number"))
 
@@ -52,7 +51,7 @@ def get_context(context):
 		login_name_placeholder.append(_("Username"))
 
 	context['login_name_placeholder'] = ' {0} '.format(_('or')).join(login_name_placeholder)
-
+     
 	return context
 
 @frappe.whitelist(allow_guest=True)

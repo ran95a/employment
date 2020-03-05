@@ -101,12 +101,13 @@
    "options": "Male\nFemale"
   },
   {
-   "fetch_from": "candidate_list.recruitment_centerrec",
+   "fetch_from": "candidate_list.recruitment_center_rec",
    "fetch_if_empty": 1,
    "fieldname": "rec_cen",
    "fieldtype": "Link",
    "label": "REC CEN",
-   "options": "REC CEN"
+   "options": "Recruitment Center_REC",
+   "set_only_once": 1
   },
   {
    "fieldname": "loc_cen",
@@ -119,7 +120,8 @@
    "fieldname": "gender",
    "fieldtype": "Select",
    "label": "Gender",
-   "options": "Male\nFemale"
+   "options": "Male\nFemale",
+   "set_only_once": 1
   },
   {
    "fieldname": "column_break_29",
@@ -219,7 +221,8 @@
    "fieldname": "national",
    "fieldtype": "Select",
    "label": "Nationalty",
-   "options": "Saudi"
+   "options": "Saudi",
+   "set_only_once": 1
   },
   {
    "fieldname": "candidate_list",
@@ -230,7 +233,7 @@
    "reqd": 1
   }
  ],
- "modified": "2020-03-04 19:36:17.619758",
+ "modified": "2020-03-05 12:18:42.921474",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Vacant Position List",

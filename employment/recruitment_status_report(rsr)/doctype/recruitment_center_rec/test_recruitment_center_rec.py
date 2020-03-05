@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 import unittest
 
-class TestRECCEN(unittest.TestCase):
+class TestRecruitmentCenter_REC(unittest.TestCase):
 	pass

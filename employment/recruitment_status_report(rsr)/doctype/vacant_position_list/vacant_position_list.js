@@ -32,14 +32,13 @@ let make_employee = function (frm) {
 let make_drop = function (frm) {
 	frm.set_value('verified_date','');
 	frm.set_value('budget_approval_sent','');
-	frm.set_value('job_cat','');
 	frm.set_value('budget_approval_recevied','');
 	frm.set_value('national','');
 	frm.set_value('residentynational_id','');
 	frm.set_value('passport_no','');
 	frm.set_value('dsg_src','');
 	frm.set_value('job_catogrey','');
-	frm.set_value('department_name','');
+	frm.set_value('department','');
 	frm.set_value('candidate_list','');
 	frm.set_value('loc_cen','');
 	frm.set_value('gender','');

@@ -1,0 +1,100 @@
+{
+ "autoname": "Prompt",
+ "creation": "2020-03-05 16:37:14.454807",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "candidate_list",
+  "nationalty",
+  "gender",
+  "residentynational_id",
+  "passport_no",
+  "recruitment_center_rec",
+  "column_break_5",
+  "loc_cen",
+  "msd_sent",
+  "msd_recevied",
+  "etaarrv_date"
+ ],
+ "fields": [
+  {
+   "fetch_from": "candidate_list.residentynational_id",
+   "fieldname": "residentynational_id",
+   "fieldtype": "Data",
+   "label": "Residenty/National ID"
+  },
+  {
+   "fetch_from": "candidate_list.passport_no",
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "fetch_from": "candidate_list.national",
+   "fieldname": "nationalty",
+   "fieldtype": "Data",
+   "label": "Nationalty"
+  },
+  {
+   "fieldname": "candidate_list",
+   "fieldtype": "Link",
+   "label": "Candidate List",
+   "options": "Candidate List"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "candidate_list.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender",
+   "options": "Male \nFemale"
+  },
+  {
+   "fetch_from": "candidate_list.loc_cen",
+   "fieldname": "loc_cen",
+   "fieldtype": "Link",
+   "label": "LOC CEN",
+   "options": "LOC CEN"
+  },
+  {
+   "fetch_from": "candidate_list.recruitment_center_rec",
+   "fieldname": "recruitment_center_rec",
+   "fieldtype": "Link",
+   "label": "Recruitment Center_REC",
+   "options": "Recruitment Center_REC"
+  },
+  {
+   "fetch_from": "candidate_list.msd_sent",
+   "fieldname": "msd_sent",
+   "fieldtype": "Data",
+   "label": "MSD Sent"
+  },
+  {
+   "fetch_from": "candidate_list.msd_recevied",
+   "fieldname": "msd_recevied",
+   "fieldtype": "Data",
+   "label": "MSD Recevied"
+  },
+  {
+   "fetch_from": "candidate_list.etaarrv_date",
+   "fieldname": "etaarrv_date",
+   "fieldtype": "Datetime",
+   "label": "ETA/Arrv Date"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-03-05 17:27:30.222159",
+ "modified_by": "Administrator",
+ "module": "Recruitment Status Report(RSR)",
+ "name": "Candidate 1",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

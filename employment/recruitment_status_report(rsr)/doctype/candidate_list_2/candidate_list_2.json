@@ -1,15 +1,13 @@
 {
- "autoname": "Prompt",
- "creation": "2020-02-23 15:59:48.119723",
+ "creation": "2020-03-05 15:44:09.642317",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
   "national",
-  "gender",
   "residentynational_id",
   "passport_no",
+  "gender",
   "recruitment_center_rec",
   "loc_cen",
   "msd_sent",
@@ -18,31 +16,37 @@
  ],
  "fields": [
   {
+   "fieldname": "national",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "residentynational_id",
+   "fieldtype": "Data",
+   "label": "Residenty/National ID "
+  },
+  {
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No "
+  },
+  {
    "fieldname": "gender",
    "fieldtype": "Select",
    "label": "Gender",
-   "options": "Male\nFemale",
-   "set_only_once": 1
-  },
-  {
-   "fieldname": "national",
-   "fieldtype": "Select",
-   "label": "Nationality",
-   "options": "Saudi",
-   "set_only_once": 1
-  },
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name",
-   "unique": 1
+   "options": "Male\nFemale"
   },
   {
    "fieldname": "recruitment_center_rec",
    "fieldtype": "Link",
    "label": "Recruitment Center_REC",
-   "options": "Recruitment Center_REC",
-   "set_only_once": 1
+   "options": "Recruitment Center_REC"
+  },
+  {
+   "fieldname": "loc_cen",
+   "fieldtype": "Link",
+   "label": "LOC CEN",
+   "options": "LOC CEN"
   },
   {
    "fieldname": "msd_sent",
@@ -55,30 +59,15 @@
    "label": "MSD Recevied"
   },
   {
-   "fieldname": "loc_cen",
-   "fieldtype": "Data",
-   "label": "LOC CEN"
-  },
-  {
-   "fieldname": "residentynational_id",
-   "fieldtype": "Data",
-   "label": "Residenty/National ID"
-  },
-  {
-   "fieldname": "passport_no",
-   "fieldtype": "Data",
-   "label": "Passport No"
-  },
-  {
    "fieldname": "etaarrv_date",
    "fieldtype": "Datetime",
-   "label": "ETA/Arrv Date"
+   "label": "ETA/Arrv Date "
   }
  ],
- "modified": "2020-03-05 17:18:39.819120",
+ "modified": "2020-03-05 15:44:09.642317",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
- "name": "Candidate List",
+ "name": "Candidate List 2",
  "owner": "Administrator",
  "permissions": [
   {

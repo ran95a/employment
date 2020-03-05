@@ -1,0 +1,78 @@
+{
+ "creation": "2020-03-05 16:42:32.541302",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "backup_candidate_2_section",
+  "candidate_list",
+  "residentynational_id",
+  "passport_no",
+  "nationalty",
+  "column_break_6",
+  "gender",
+  "rec_cen",
+  "loc_cen"
+ ],
+ "fields": [
+  {
+   "fieldname": "backup_candidate_2_section",
+   "fieldtype": "Section Break",
+   "label": "Backup Candidate 2"
+  },
+  {
+   "fieldname": "candidate_list",
+   "fieldtype": "Link",
+   "label": "Candidate List",
+   "options": "Candidate List"
+  },
+  {
+   "fieldname": "residentynational_id",
+   "fieldtype": "Data",
+   "label": "Residenty/National ID"
+  },
+  {
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "fieldname": "nationalty",
+   "fieldtype": "Select",
+   "label": "Nationalty"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "rec_cen",
+   "fieldtype": "Link",
+   "label": "REC CEN",
+   "options": "REC CEN"
+  },
+  {
+   "fieldname": "loc_cen",
+   "fieldtype": "Data",
+   "label": "LOC CEN",
+   "options": "LOC CEN"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-03-05 16:42:32.541302",
+ "modified_by": "Administrator",
+ "module": "Recruitment Status Report(RSR)",
+ "name": "Candidate 2",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

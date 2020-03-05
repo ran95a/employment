@@ -12,29 +12,21 @@
   "postion_old_one",
   "department",
   "job_title",
+  "job_catogrey",
   "column_break_13",
   "verified_date",
   "dsg_src",
   "request_gendar",
-  "section_break_25",
-  "residentynational_id",
-  "passport_no",
-  "job_catogrey",
-  "candidate_list",
-  "national",
-  "gender",
-  "rec_cen",
-  "loc_cen",
-  "budget_approval_sent",
-  "budget_approval_recevied",
-  "column_break_29",
-  "msd_sent",
-  "msd_recevied",
-  "date_open_for_request",
-  "etaarrv_date",
+  "new_form_section",
   "requision_date",
+  "date_open_for_request",
+  "budget_approval_sent",
+  "column_break_17",
+  "budget_approval_recevied",
   "time_line",
   "time_line_rd",
+  "section_break_25",
+  "candidate_list",
   "requiment_detail_section",
   "remarks",
   "column_break_30",
@@ -59,24 +51,12 @@
   {
    "fieldname": "section_break_25",
    "fieldtype": "Section Break",
-   "label": "Candidate Detail"
+   "label": "Prime Candidate "
   },
   {
    "fieldname": "verified_date",
    "fieldtype": "Datetime",
    "label": "Verified Date"
-  },
-  {
-   "depends_on": "eval:doc.status == \"Arrived Externally\" \n",
-   "fieldname": "residentynational_id",
-   "fieldtype": "Data",
-   "label": "Residenty/National ID"
-  },
-  {
-   "depends_on": "eval:doc.status == \"Arrived Externally\"\n",
-   "fieldname": "passport_no",
-   "fieldtype": "Data",
-   "label": "Passport No"
   },
   {
    "fieldname": "date_open_for_request",
@@ -101,33 +81,6 @@
    "options": "Male\nFemale"
   },
   {
-   "fetch_from": "candidate_list.recruitment_center_rec",
-   "fetch_if_empty": 1,
-   "fieldname": "rec_cen",
-   "fieldtype": "Link",
-   "label": "REC CEN",
-   "options": "Recruitment Center_REC",
-   "set_only_once": 1
-  },
-  {
-   "fieldname": "loc_cen",
-   "fieldtype": "Data",
-   "label": "LOC CEN"
-  },
-  {
-   "fetch_from": "candidate_list.gender",
-   "fetch_if_empty": 1,
-   "fieldname": "gender",
-   "fieldtype": "Select",
-   "label": "Gender",
-   "options": "Male\nFemale",
-   "set_only_once": 1
-  },
-  {
-   "fieldname": "column_break_29",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "budget_approval_sent",
    "fieldtype": "Date",
    "label": "Budget Approval Sent"
@@ -136,21 +89,6 @@
    "fieldname": "budget_approval_recevied",
    "fieldtype": "Date",
    "label": "Budget Approval Recevied"
-  },
-  {
-   "fieldname": "msd_sent",
-   "fieldtype": "Date",
-   "label": "MSD Sent"
-  },
-  {
-   "fieldname": "msd_recevied",
-   "fieldtype": "Date",
-   "label": "MSD Recevied"
-  },
-  {
-   "fieldname": "etaarrv_date",
-   "fieldtype": "Datetime",
-   "label": "ETA/Arrv Date"
   },
   {
    "fieldname": "remarks",
@@ -217,23 +155,22 @@
    "unique": 1
   },
   {
-   "fetch_from": "candidate_list.national",
-   "fieldname": "national",
-   "fieldtype": "Select",
-   "label": "Nationalty",
-   "options": "Saudi",
-   "set_only_once": 1
+   "fieldname": "candidate_list",
+   "fieldtype": "Table",
+   "label": "Candidate List",
+   "options": "Candidate 1"
   },
   {
-   "fieldname": "candidate_list",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Candidate List",
-   "options": "Candidate List",
-   "reqd": 1
+   "fieldname": "new_form_section",
+   "fieldtype": "Section Break",
+   "label": "new Form"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2020-03-05 12:18:42.921474",
+ "modified": "2020-03-05 17:20:30.771102",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Vacant Position List",

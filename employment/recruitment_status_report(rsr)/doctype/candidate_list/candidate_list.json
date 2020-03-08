@@ -10,13 +10,14 @@
   "residentynational_id",
   "passport_no",
   "recruitment_center_rec",
+  "vacant_position_list",
+  "postion_number",
   "column_break_7",
+  "department",
   "loc_cen",
   "msd_sent",
   "msd_recevied",
-  "etaarrv_date",
-  "select_status",
-  "vacant_link"
+  "etaarrv_date"
  ],
  "fields": [
   {
@@ -75,21 +76,28 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "select_status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Select Status",
-   "options": "Prime\nBackup\nDrop"
+   "fetch_from": "vacant_position_list.postion_name",
+   "fieldname": "postion_number",
+   "fieldtype": "Data",
+   "label": "Postion Number",
+   "read_only": 1
   },
   {
-   "depends_on": "eval:doc.select_status == \"Drop\"",
-   "fieldname": "vacant_link",
+   "fetch_from": "vacant_position_list.department",
+   "fieldname": "department",
    "fieldtype": "Link",
-   "label": "Vacant Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vacant_position_list",
+   "fieldtype": "Link",
+   "label": "Vacant Position List",
    "options": "Vacant Position List"
   }
  ],
- "modified": "2020-03-08 15:27:59.144792",
+ "modified": "2020-03-08 16:25:46.464725",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Candidate List",

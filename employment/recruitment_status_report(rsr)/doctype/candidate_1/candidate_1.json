@@ -16,7 +16,8 @@
   "msd_sent",
   "msd_recevied",
   "etaarrv_date",
-  "select_status"
+  "select_status",
+  "vacant_link"
  ],
  "fields": [
   {
@@ -89,13 +90,20 @@
   {
    "fetch_from": "candidate_list.select_status",
    "fieldname": "select_status",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Select Status",
    "options": "Prime\nBackup\nDrop"
+  },
+  {
+   "depends_on": "eval:doc.select_status == \"Drop\"",
+   "fieldname": "vacant_link",
+   "fieldtype": "Link",
+   "label": "Vacant Link",
+   "options": "Vacant Position List"
   }
  ],
  "istable": 1,
- "modified": "2020-03-08 10:58:30.694867",
+ "modified": "2020-03-08 16:04:08.645892",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Candidate 1",

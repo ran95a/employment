@@ -30,7 +30,8 @@
   "requiment_detail_section",
   "remarks",
   "column_break_30",
-  "er"
+  "er",
+  "user"
  ],
  "fields": [
   {
@@ -168,9 +169,15 @@
   {
    "fieldname": "column_break_17",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
   }
  ],
- "modified": "2020-03-05 17:20:30.771102",
+ "modified": "2020-03-08 13:19:18.325077",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Vacant Position List",

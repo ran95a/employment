@@ -5,16 +5,18 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
   "national",
   "gender",
   "residentynational_id",
   "passport_no",
   "recruitment_center_rec",
+  "column_break_7",
   "loc_cen",
   "msd_sent",
   "msd_recevied",
-  "etaarrv_date"
+  "etaarrv_date",
+  "select_status",
+  "vacant_link"
  ],
  "fields": [
   {
@@ -30,12 +32,6 @@
    "label": "Nationality",
    "options": "Saudi",
    "set_only_once": 1
-  },
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name",
-   "unique": 1
   },
   {
    "fieldname": "recruitment_center_rec",
@@ -73,9 +69,27 @@
    "fieldname": "etaarrv_date",
    "fieldtype": "Datetime",
    "label": "ETA/Arrv Date"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Select Status",
+   "options": "Prime\nBackup\nDrop"
+  },
+  {
+   "depends_on": "eval:doc.select_status == \"Drop\"",
+   "fieldname": "vacant_link",
+   "fieldtype": "Link",
+   "label": "Vacant Link",
+   "options": "Vacant Position List"
   }
  ],
- "modified": "2020-03-05 17:18:39.819120",
+ "modified": "2020-03-08 15:27:59.144792",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Candidate List",

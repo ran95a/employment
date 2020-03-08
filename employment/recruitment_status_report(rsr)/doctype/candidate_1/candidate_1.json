@@ -15,7 +15,8 @@
   "loc_cen",
   "msd_sent",
   "msd_recevied",
-  "etaarrv_date"
+  "etaarrv_date",
+  "select_status"
  ],
  "fields": [
   {
@@ -84,10 +85,17 @@
    "fieldname": "etaarrv_date",
    "fieldtype": "Datetime",
    "label": "ETA/Arrv Date"
+  },
+  {
+   "fetch_from": "candidate_list.select_status",
+   "fieldname": "select_status",
+   "fieldtype": "Data",
+   "label": "Select Status",
+   "options": "Prime\nBackup\nDrop"
   }
  ],
  "istable": 1,
- "modified": "2020-03-05 17:27:30.222159",
+ "modified": "2020-03-08 10:58:30.694867",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Candidate 1",

@@ -1,19 +1,23 @@
 {
+ "autoname": "field:job_catogrey",
  "creation": "2020-02-27 13:16:06.749202",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "job_catogry"
+  "job_catogrey"
  ],
  "fields": [
   {
-   "fieldname": "job_catogry",
+   "fieldname": "job_catogrey",
    "fieldtype": "Data",
-   "label": "Job Catogry "
+   "in_list_view": 1,
+   "label": "Job Catogrey",
+   "reqd": 1,
+   "unique": 1
   }
  ],
- "modified": "2020-02-27 13:16:06.749202",
+ "modified": "2020-03-10 12:55:34.288966",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Job Catogrey",

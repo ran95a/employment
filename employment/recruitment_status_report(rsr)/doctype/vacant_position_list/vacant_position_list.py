@@ -18,9 +18,8 @@ def make_employee(source_name, target_doc=None):
 	doc = get_mapped_doc("Vacant Position List", source_name, {
 			"Vacant Position List": {
 				"doctype": "Employee Arrival List",
-				"field_map": {
-					"name": "first_name",	
-		            "gender": "gender",
+				"field_map": {	
+		            "request_gendar": "gender",
 		            "date_open_for_request": "date_of_joining"			 
 				}}
 		}, target_doc, set_missing_values)

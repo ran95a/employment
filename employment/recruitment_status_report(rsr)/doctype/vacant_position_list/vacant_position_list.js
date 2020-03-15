@@ -12,7 +12,7 @@ frappe.ui.form.on('Vacant Position List', {
         }
 	}
 });
-frappe.ui.form.on('Vacant Position List', {
+/*frappe.ui.form.on('Vacant Position List', {
 refresh: function (frm) {
 		if ((!frm.doc.__islocal)){
 			frm.add_custom_button(__('Drop'),
@@ -22,14 +22,14 @@ refresh: function (frm) {
 			);
         }
 	}
-});
+});*/
 let make_employee = function (frm) {
 	frappe.model.open_mapped_doc({
 		method:"employment.recruitment_status_report(rsr).doctype.vacant_position_list.vacant_position_list.make_employee",
 		frm: frm
 	});
 };
-let make_drop = function (frm) {
+/*let make_drop = function (frm) {
 	frm.set_value('verified_date','');
 	frm.set_value('budget_approval_sent','');
 	frm.set_value('budget_approval_recevied','');
@@ -53,4 +53,4 @@ let make_drop = function (frm) {
 	frm.set_value('request_gendar','');
 	frm.set_value('remarks','');
 	frm.set_value('er','');
-};
+};*/

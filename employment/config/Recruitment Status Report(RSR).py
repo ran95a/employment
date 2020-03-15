@@ -22,7 +22,11 @@ def get_data():
 					"name": "Employee Arrival List",
 					"onboard": 1,
 				},
-				
+				{
+					"type": "doctype",
+					"name": "Employee Resignation",
+					"onboard": 1,
+				},
 				
 			]
 		},

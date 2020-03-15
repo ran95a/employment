@@ -31,7 +31,8 @@
   "remarks",
   "column_break_30",
   "er",
-  "user"
+  "user",
+  "company"
  ],
  "fields": [
   {
@@ -124,6 +125,7 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "Advertised Int\nAdvertised Ext\nAdvertised Int. & Ext\nMeeting Department\nRequisition\nSourcing\nSorting CVs\nEnglish Exam/Typing\nCVs for review\nInterview\nPQD/ AOC\nClinical Privileges\nCredentials Committee\nMSD\nSecurity Clearance\nJob Offer\nMedical Exam\nAttestation Documents\nPrometric Exam\nDataflow\nSCFHS Auditor\nVisa Process\nTransfer of Sponsorship\nTravel Order\nETA Confirmed\nPAF\nDBAF\nJob Description\nLocum\nBackup\nHold\nHold for pool employee\nFrozen\nDropped\nArrived Externally\nArrived Internally"
   },
@@ -175,9 +177,15 @@
    "fieldtype": "Link",
    "label": "User",
    "options": "User"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
   }
  ],
- "modified": "2020-03-08 13:19:18.325077",
+ "modified": "2020-03-15 12:52:48.386532",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Vacant Position List",

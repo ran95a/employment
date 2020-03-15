@@ -1,0 +1,152 @@
+{
+ "autoname": "field:employee",
+ "creation": "2017-03-25 15:38:44.193318",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "date_of_joining",
+  "reason",
+  "reason_details",
+  "designation",
+  "column_break_2",
+  "company",
+  "department",
+  "permission_date",
+  "last_working_date",
+  "notice_period_length",
+  "upload_resignation_document",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee Name",
+   "options": "Vacant Position List",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Read Only",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Reason"
+  },
+  {
+   "fieldname": "reason_details",
+   "fieldtype": "Text",
+   "label": "Reason Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "permission_date",
+   "fieldtype": "Date",
+   "label": "Submission Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_working_date",
+   "fieldtype": "Date",
+   "label": "Last Working Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notice_period_length",
+   "fieldtype": "Select",
+   "label": "Notice period length",
+   "options": "1Month\n2Month\n3Month\n4Month\n5Month\n6Month\n7Month\n8Month\n9Month\n10Month\n11Month\n12Month"
+  },
+  {
+   "fieldname": "upload_resignation_document",
+   "fieldtype": "Attach",
+   "label": "Upload resignation document"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Resignation",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-03-15 09:58:35.883143",
+ "modified_by": "Administrator",
+ "module": "Recruitment Status Report(RSR)",
+ "name": "Employee Resignation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name",
+ "track_seen": 1
+}

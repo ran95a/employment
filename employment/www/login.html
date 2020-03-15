@@ -6,6 +6,7 @@
 </style>
 {% endblock %}
 
+
 {% block page_content %}
 <!-- {{ for_test }} -->
 <div style='min-height: 360px'>
@@ -47,7 +48,7 @@
 	</div>
 	<div class='form-footer'>
 
-			<div class='social-logins'>
+			-<div class='social-logins'>
 			{%- if social_login -%}
 				<h6>{{ _("Or login with") }}</h6>
 
@@ -61,11 +62,11 @@
 			{%- endif -%}
 			</div>
 
-	{%- if not disable_signup -%}
+	<!--{%- if not disable_signup -%}
 		<p class="text-center sign-up-message">
 			<a href="#signup" style="margin-top: -2px;">{{ _("Don't have an account? Sign up") }}</a>
 		</p>
-	{%- endif -%}
+	{%- endif -%}-->
 	<p class="text-center forgot-password-message">
 		<a href="#forgot">{{ _("Forgot Password?") }}</a></p>
 	</div>

@@ -1,5 +1,4 @@
 {
- "autoname": "Prompt",
  "creation": "2020-03-05 16:37:14.454807",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -102,7 +101,7 @@
    "options": "Vacant Position List"
   }
  ],
- "modified": "2020-03-10 14:01:23.942853",
+ "modified": "2020-03-11 17:04:31.655039",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Candidate 1",

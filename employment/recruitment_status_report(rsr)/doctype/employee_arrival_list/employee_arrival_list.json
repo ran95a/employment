@@ -37,6 +37,7 @@
    "options": "Salutation"
   },
   {
+   "fetch_from": "candidate_list.name1",
    "fieldname": "first_name",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -128,7 +129,7 @@
    "label": "New Workplace"
   }
  ],
- "modified": "2020-03-10 12:09:40.980374",
+ "modified": "2020-03-11 21:47:52.042644",
  "modified_by": "Administrator",
  "module": "Recruitment Status Report(RSR)",
  "name": "Employee Arrival List",
